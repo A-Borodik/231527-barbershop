@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
         <header class="main-header">
@@ -146,24 +147,7 @@
                 <button class="btn" type="submit">Войти</button>
             </form>
         </div>
-        <div class="popup-overlay popup-disabled"></div>
-        
-<script>
-$(document).ready(function() {
-    $("a.login").click(function() {
-        $(".popup").removeClass("popup-disabled");
-        $(".popup-overlay").removeClass("popup-disabled");
-    });
-    $(".popup-content-close").click(function() {
-        $(".popup").addClass("popup-disabled");
-        $(".popup-overlay").addClass("popup-disabled");
-    });
-    $(".popup-overlay").click(function() {
-        $(".popup").addClass("popup-disabled");
-        $(".popup-overlay").addClass("popup-disabled");
-    });    
-});        
-</script>
+        <div class="popup-overlay popup-disabled"></div>   
     </body>
 </html>
 
