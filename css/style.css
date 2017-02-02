@@ -1,0 +1,1154 @@
+/* Стили для главной + универсальные для внутренних */
+
+body {
+    min-width: 960px;
+    background: #000000 url("../img/background.jpg") no-repeat top;
+    color: #ffffff;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main-header {
+    margin-bottom: 60px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.container {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;    
+}
+
+.main-navigation {
+    float: left;
+    width: 780px;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+
+.main-navigation a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 25px 20px;
+}
+
+.main-navigation a:hover {
+    background-color: #242424;
+}
+
+.user-enter {
+    float: right;
+    max-width: 140px;
+}
+
+.login {
+    position: relative;
+    display: inline-block;
+    padding: 25px 20px;
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.login:hover {
+    background-color: #242424;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 20px;
+    width: 18px;
+    height: 16px;
+    background: url("../img/spritesheet.png") -70px -52px no-repeat;
+    opacity: 0.3;
+}
+
+.login:hover::before {
+    opacity: 1;
+}
+
+.main-logo {
+    width: 368px;
+    height: 204px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features-item {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.features-name {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.features-name::after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+}
+
+.features-item p {
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+
+.main-content {
+    padding: 50px 80px;
+    margin-bottom: 35px;
+    color: #000000;
+    background: url("../img/main-content-shadow.png") no-repeat center, 
+        #f8f5f2 url("../img/main-content-background.png");
+}
+
+
+.content-block-left {
+    float: left;
+    width: 380px;
+}
+
+.content-block-right {
+    float: right;
+    width: 300px;
+}
+
+.main-content p {
+    margin: 0;
+    margin-bottom: 25px;
+    padding-right: 10px;
+}
+
+.content-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news-content {
+    margin: 0;
+    padding: 0;
+    padding-right: 75px;
+    list-style: none;
+}
+
+.news-content li {
+    margin-bottom: 25px;
+}
+
+.news-content p {
+    margin-bottom: 0;
+}
+
+.news-content time {
+    text-transform: none;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 120px;
+    min-height: 25px; 
+    padding: 10px;   
+}
+
+.btn:hover,
+.btn:active {
+     background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+    background-color: #000000;
+}
+
+.photo-gallery {
+    position: relative;
+    height: 260px;
+}
+
+.gallery-content {
+    margin: 0;
+    height: 164px;
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.photo-gallery .btn {
+    position: absolute;
+    bottom: 0;
+}
+
+.gallery-nav-prev {
+    left: 0;
+}
+
+.gallery-nav-next {
+    right: 0;
+}
+
+a.feedback {
+    margin-left: 20px;
+}
+
+.submit-form input {
+    float: left;
+    width: 106px;
+    padding: 7px 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+    outline: none;   
+}
+
+.submit-form input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.submit-form input:focus {
+    border: 2px solid #663d15;
+}
+
+.submit-form .btn {
+    clear: both;
+    width: 100%;
+}
+
+.main-footer {
+    margin-top: 65px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: #ffffff;
+    background: #232323 url(../img/footer-background.png) repeat;
+
+}
+
+.main-footer h3 {
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+}
+
+.footer-contacts p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.footer-contacts a {
+    color: #ffffff;
+}
+
+.footer-contacts a:hover {
+    text-decoration: none;
+}
+
+.footer-social {
+    float: left;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+    font-size: 0;
+    text-decoration: none;
+
+}
+
+.btn-vk {
+    background: #000000 url("../img/spritesheet.png") -103px -57px no-repeat;
+}
+
+.btn-fb {
+    background: #000000 url("../img/spritesheet.png") -55px 0px no-repeat;
+    
+}
+
+.btn-inst {
+    background: #000000 url("../img/spritesheet.png") no-repeat -59px -78px;
+}
+
+.social-btn:hover {
+    transition: 0.3s;
+    transform: translateY(-5px);
+    filter:invert(100%);
+}
+
+.footer-copyright {
+    float: right;
+    width: 180px;
+}
+
+.footer-copyright .btn {
+    width: 90%;
+}
+
+
+/* Всплывающее окно */
+.popup-disabled {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    width: 300px;
+    padding: 50px 80px;
+    margin-left: -230px;
+    z-index: 40;
+    color: #000000;
+    background: #f8f5f2 url("img/main-content-background.png") repeat; 
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 26px;
+    height: 24px;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    background: none;
+    outline: none;
+}
+
+
+.popup-content-close::before,
+.popup-content-close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 22px;
+    height: 3px;
+    background-color: #d0d0d0;
+    border-radius: 1px;
+}
+
+.popup-content-close:hover::before,
+.popup-content-close:hover::after {
+    background-color: #663d15;
+}
+
+.popup-content-close::before{
+    transform: rotate(45deg);
+}
+
+.popup-content-close::after {
+    transform: rotate(-45deg);
+}
+
+.popup-title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.popup p {
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+.popup .login-form {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 236px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    padding-right: 40px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #f8f5f3;
+    border: 2px solid #000000;
+    outline: none;
+}
+
+.login-form input:focus {
+     border: 2px solid #663d15;
+}
+
+.login-form input.user-icon {
+    background-image: url(../img/User.png);
+     background-position: 263px 12px;
+    background-repeat: no-repeat;
+}
+
+.login-form input.password-icon {
+    background-image: url(../img/Locked.png);
+    background-position: 263px 12px;
+    background-repeat: no-repeat;
+}
+
+.login-form .restore {
+    float: right;
+    color: #000000;
+}
+
+.login-form .btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.login-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    width: 15px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    transform: rotate(-45deg);
+}
+
+
+.login-checkbox {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.login-checkbox:hover {
+    color: #663d15;
+}
+
+/* Стили для прайс-листа */
+
+
+.inner-page {
+    color: #000000;
+    background: #f8f5f2 url("img/main-content-background.png") repeat; 
+    
+}
+
+.inner-page .main-header {
+    margin-bottom: 55px;
+   
+}
+
+.inner-page .main-footer {
+    box-shadow: inset 0 40px 20px -20px rgba(0,0,0,0.5);
+    
+}
+
+.main-navigation .inner-logo {
+    float: left;
+    width: 111px;
+    height: 24px;
+    padding-top: 21px;
+}
+
+.main-navigation .inner-logo:hover {
+    background: none;
+}
+
+.main-navigation .active {
+    position: relative;
+    background: none;
+}
+
+.main-navigation .active::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: #ffffff;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    
+}
+
+.main-navigation .active a:hover {
+    background: none;
+}
+
+.inner-page-title h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs li {
+    position: relative;
+    display: inline;
+    padding-right: 40px;
+}
+
+.breadcrumbs a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs .current {
+    color: #aba9a7;
+}
+
+.breadcrumbs li::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 18px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background-color: #000000;
+}
+
+.breadcrumbs .current::after {
+    display: none;
+}
+
+
+
+.inner-content {
+    margin-bottom: 75px;
+}
+
+
+.inner-content h3 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.inner-content p {
+    margin: 14px 0;
+}
+
+.inner-content table {
+    border-collapse: collapse;
+}
+
+.inner-content td {
+    padding: 10px 15px;
+    border: 2px solid #000000;
+}
+
+
+.inner-heading {
+    margin-top: 55px;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+.inner-heading h2 {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 25px;
+    line-height: 48px;
+    font-size: 48px;
+    z-index: 2;
+    background: #f8f5f2 url("img/main-content-background.png") repeat;
+}
+
+.inner-heading::after {
+    content: "";
+    position: relative;
+    top: -25px;
+    display: block;
+    border-bottom: 2px solid #000000;
+    z-index: 1;
+}
+
+.brand-list {
+    margin: 14px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.brand-list li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.brand-list li:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background-color: #000000;
+}
+
+.prices-table {
+    width: 100%;
+}
+
+.prices-table td {
+    width: 50%;
+}
+
+.prices-table td:last-child {
+    text-align: center;
+}
+
+.inner-columns {
+    margin: 60px 0;
+}
+
+.inner-column-left {
+    float: left;
+    width: 385px;
+}
+
+.inner-column-left h3 {
+    width: 275px;
+}
+
+.inner-column-right {
+    float: right;
+    width: 460px; 
+}
+
+.inner-column-right h3 {
+    width: 175px;
+}
+
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+    margin-top: 0;
+}
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+    margin-bottom: 0;
+}
+
+.inner-column-right p {
+    width: 385px;
+}
+
+
+/* Стили для страницы каталога товаров */
+
+.shop-columns {
+    margin: 55px 0;
+}
+
+.shop-columns h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.shop-column-left {
+    float: left;
+    width: 220px;
+}
+
+.shop-column-left ul {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    list-style: none;
+}
+
+.shop-column-left li {
+    margin-bottom: 25px;
+    line-height: 14px
+}
+
+.shop-column-right {
+    float: right;
+    width: 706px;
+    border: none;
+}
+
+.shop-items {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 220px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+.shop-items:nth-child(3n) {
+    margin-right: 0;
+}
+
+.shop-items figure {
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    background: #ffffff;
+    
+}
+
+.shop-items figcaption {
+    width: 187px;
+    margin: 0 auto;
+    line-height: 18px;
+}
+
+.shop-items figcaption span,
+.shop-items figcaption a {
+    display: block;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+}
+
+.shop-items figcaption span {
+    text-transform: none;
+}
+
+.shop-items figcaption a:hover {
+    text-decoration: underline;
+    
+}
+
+.buy {
+    padding: 0;
+    margin: 17px;
+    width: 190px;
+    background-color: #e5e5e5; 
+}
+
+.buy .btn {
+    display: inline-block;
+    min-width: 77px;
+    border: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.buy span {
+    display: inline-block;
+    width: 110px;
+    margin: 10px auto;
+    text-align: center;       
+}
+
+.shop-nav a {
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 7px;
+    width: 45px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.shop-nav a:hover {
+    background-color: #663d15;
+}
+
+.shop-nav .current-page {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.shop-nav .current-page:hover {
+    background-color: #ffffff;
+}
+
+
+/* Стили для фильтра товаров в магазине */
+
+.brand-filter-radio label,
+.brand-filter-checkbox label{
+    display: inline-block;
+    padding-left: 40px;
+    max-width: 170px;
+}
+
+.brand-filter .btn {
+    width: 110px;
+    
+}
+
+
+/* Чекбоксы */
+
+.brand-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.brand-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #000000;
+}
+
+.brand-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.brand-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    width: 15px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.brand-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.brand-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    transform: rotate(-45deg);
+}
+
+
+.brand-checkbox {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.brand-checkbox:hover  {
+    color: #663d15;
+}
+
+.brand-checkbox input[type="checkbox"]:hover + .checkbox-indicator::before,
+.brand-checkbox input[type="checkbox"]:hover + .checkbox-indicator::after  {
+    background-color: #663d15;     
+}
+
+.brand-checkbox input[type="checkbox"]:hover + .checkbox-indicator,
+.brand-checkbox input[type="checkbox"]:hover + .checkbox-indicator  {
+    border-color: #663d15;     
+}
+
+/* Радио */
+
+
+.brand-radio input[type="radio"] {
+    display: none;
+}
+
+.brand-radio input[type="radio"] + .radio-indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+
+.brand-radio input[type="radio"]:checked + .radio-indicator::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.brand-radio {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.brand-radio:hover {
+    color: #663d15;
+}
+
+.brand-radio input[type="radio"]:hover + .radio-indicator::before {
+    background-color: #663d15;     
+}
+
+.brand-radio input[type="radio"]:hover + .radio-indicator {
+    border-color: #663d15;     
+}
+
+
+/* Стили для страницы товара из каталога */
+
+.item-gallery {
+    float:left;
+    margin-top: 55px;
+}
+
+.item-description {
+    float: right;
+    width: 390px;
+    margin-top: 85px;
+}
+
+.item-description .status {
+    display: block;
+    margin-bottom: 35px;
+}
+
+.item-description .item-art {
+    float: right;
+    opacity: 0.5;   
+}
+
+.item-description p {
+    margin-bottom: 35px;
+}
+
+.item-description .buy {
+    margin-left: 0;
+}
+
+.item-description h3 {
+    margin-top: 55px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+    
+}
+
+.item-description ul {
+    margin: 14px 0;
+    padding: 0;
+    list-style: none; 
+}
+
+.item-description li {
+    position: relative;
+   
+    padding-left: 20px;
+}
+
+.item-description li:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background-color: #000000;
+}
+
+
+/* Слайдер */
+
+.item-gallery input[type="radio"] {
+    display: none;
+}
+.slider {
+    position: relative;
+    width: 460px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+.slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    opacity: 0;
+    transition: opacity 0.4s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+}
+.slides img {
+    width: 460px;
+    height: 498px;
+}
+.slider-controls label {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width: 140px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+}
+.slider-controls label:last-child {
+    margin-right: 0;
+}
+.slider-controls label:hover {
+    transform: scale(1.1);
+}
+.slider-controls .slide-left-image {
+    background: url(../img/Baxter-vials.jpg);
+}
+.slider-controls .slide-center-image {
+    background: url(../img/Baxter-bag.jpg);
+}
+.slider-controls .slide-right-image {
+    background: url(../img/Baxter-item-small.jpg);
+}
+#slide-left:checked ~ .slider .slide-left {
+    opacity: 1;
+}
+#slide-center:checked ~ .slider .slide-center {
+    opacity: 1;
+}
+#slide-right:checked ~ .slider .slide-right {
+    opacity: 1;
+}
+
+
+
+

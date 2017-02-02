@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Барбершоп</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body class="inner-page">
+        <header class="main-header">
+            <div class="container clearfix">
+                <nav class="main-navigation">
+                   <a href="index.html" class="inner-logo">
+                       <img src="img/Inner_logo.png" width="111" height="24" alt="Барбершоп Бородинский">
+                   </a>
+                    <ul>
+                        <li>
+                            <a href="#">Информация</a>
+                        </li>    
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Прайс-лист</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">Магазин</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-enter">
+                  <a class="login" href="#">Вход</a>  
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <div class="inner-page-title">
+                <h1>Прайс-лист</h1>
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="current">Прайс-лист</li>
+                </ul>
+            </div>
+            <div class="inner-content">
+                <div class="inner-heading">
+                    <h2>Истинно мужская классика</h2>
+                </div>
+                <div class="inner-columns clearfix">
+                    <div class="inner-column-left">
+                <h3>Мы используем только лучшие средства:</h3>
+                <ul class="brand-list">
+                    <li>Baxter of California</li>
+                    <li>Mr Natty</li>
+                    <li>Suavecito</li>
+                    <li>Malin+Goetz</li>
+                </ul>
+                   </div>
+                   <div class="inner-column-right">
+                <h3>Цены на услуги наших мастеров:</h3>
+                <table class="prices-table">
+                    <tr>
+                        <td>Стрижка</td>
+                        <td>1500 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Стрижка бороды</td>
+                        <td>500 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Накрутка усов</td>
+                        <td>350 р.</td>
+                    </tr>
+                </table>
+                    </div>
+                </div>
+                <div class="inner-columns clearfix">
+                <h3>Несколько слов о нас:</h3>
+                <div class="inner-column-left">
+                <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+                    </div>
+                <div class="inner-column-right">
+                <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="main-footer">
+            <div class="container clearfix">
+                <section class="footer-contacts">
+                    <p>
+                        Барбершоп «БОРОДИНСКИЙ»<br>
+                        Адрес: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+                        <a href="#">КАК НАС НАЙТИ?</a><br>
+                        Телефон: +7 (495) 666-02-66
+                    </p>
+                </section>
+                <section class="footer-social">
+                    <h3>Давайте дружить!</h3>
+                    <a class="social-btn btn-vk" href="#">VK</a>
+                    <a class="social-btn btn-fb" href="#">Facebook</a>
+                    <a class="social-btn btn-inst" href="#">Instagram</a>
+                </section>
+                <section class="footer-copyright">
+                    <h3>Разработано:</h3>
+                    <a class="btn" href="#">HTML Academy</a>
+                </section>
+            </div>
+        </footer>
+        <div class="popup popup-disabled">
+            <button class="popup-content-close" type="button" title="Закрыть">Закрыть</button>
+            <h2 class="popup-title">Личный кабинет</h2>
+            <p>Введите свой логин и пароль</p>
+            <form action="#" class="login-form" method="post">
+                <input type="text" class="user-icon" name="login" placeholder="Логин">
+                <input type="password" class="password-icon" name="password" placeholder="Пароль">
+                <label class="login-checkbox">
+                    <input type="checkbox" name="remember">
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня
+                </label>
+                <a href="#" class="restore">Я забыл пароль!</a>
+                <button class="btn" type="submit">Войти</button>
+            </form>
+        </div>
+        <div class="popup-overlay popup-disabled"></div>
+<script>
+$(document).ready(function() {
+    $("a.login").click(function() {
+        $(".popup").removeClass("popup-disabled");
+        $(".popup-overlay").removeClass("popup-disabled");
+    });
+    $(".popup-content-close").click(function() {
+        $(".popup").addClass("popup-disabled");
+        $(".popup-overlay").addClass("popup-disabled");
+    });
+    $(".popup-overlay").click(function() {
+        $(".popup").addClass("popup-disabled");
+        $(".popup-overlay").addClass("popup-disabled");
+    });    
+});        
+</script>
+    </body>
+</html>
+
